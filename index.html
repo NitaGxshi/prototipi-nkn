@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+	<title>Log In</title>
+ 
+</head>
+
+<body >
+    <nav class="navbar">
+        <a href="index.html"><img src="./logoNKN.png"  class="logob"></a>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="index.html">Register</a></li>
+        </ul>
+        </nav>
+<div class="login">
+            <div class="boxx">
+                <div class="butonat">
+                    <div id="btnn"></div>
+                    <button type="button" class="butoni" onclick="login()">Log-in</button>
+                    <button type="button" class="butoni" onclick="register()">Register</button>
+                </div>
+            <form id="Login" class="forma" action="Home.html" method="post">
+                <input type="text"  name="Username" class="input" placeholder="Emri i Perdoruesit" >
+                <input type="password"  name="Passwordi" id="Pasi" class="input" placeholder="Fjalkalimi" >
+                <button href="Home.html" type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="Regjistrohu" class="forma" method="POST" action="Home.html">
+                <input type="text" name="emri" class="input" placeholder="Emri" >
+                <input type="text" name="mbiemri" class="input" placeholder="Mbiemri" >
+                <input type="text" name="username" class="input" placeholder="Emri i Perdoruesit" >
+                <input type="password" name="password" id="Pas" class="input" placeholder="Fjalkalimi" >
+                <input type="text" name="email" class="input" id="Email" placeholder="Email" >
+                <input type="number" name="numri_kontaktues" id="Nr" class="input" placeholder="Numri Kontaktues" >
+                <select name="gjinia" class="Gjinia">
+                    <option value="f">Femer</option>
+                     <option value="m">Mashkull</option>
+                </select>
+                <button href="Home.html" class="submit-btn">Regjistrohu</button>
+            </form>
+            </div>
+        <script>
+            var x = document.getElementById("Login");
+            var y = document.getElementById("Regjistrohu");
+            var z = document.getElementById("btnn");
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+                }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+                }
+        </script>
+        </div>
+
+        <section id="footer">
+            
+            <div class="foot">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="index.html">Register</a></li>
+        
+                </ul>
+            </div>
+            <div class="rfoot">
+               <ul>
+                  <li>CONTACT US</li>
+                  <li>ContactUs@khp.com</li>
+                  <li>+383 48 777 777</li>
+                </ul>
+                <p style='text-align: center;'>
+                    &copy; <script>
+                                    document.write(new Date().getFullYear())
+                                    </script> 
+                    Kosovo Hiring Platform</p>
+                  </div>
+            </div>
+        </section>
+            </body>
+            </html>
